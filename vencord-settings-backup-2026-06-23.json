@@ -3,11 +3,11 @@
         "autoUpdate": true,
         "autoUpdateNotification": true,
         "useQuickCss": true,
-        "themeLinks": [],
-        "eagerPatches": false,
-        "enabledThemes": [
-            "FrostedGlassV2.theme.css"
+        "themeLinks": [
+            "https://ayan-adhikari.github.io/Vencord-Config/FrostedGlass.theme.css"
         ],
+        "eagerPatches": false,
+        "enabledThemes": [],
         "enableReactDevtools": false,
         "frameless": false,
         "transparent": false,
@@ -16,7 +16,7 @@
         "winNativeTitleBar": false,
         "plugins": {
             "ChatInputButtonAPI": {
-                "enabled": false
+                "enabled": true
             },
             "CommandsAPI": {
                 "enabled": true
@@ -37,7 +37,7 @@
                 "enabled": true
             },
             "MessagePopoverAPI": {
-                "enabled": false
+                "enabled": true
             },
             "MessageUpdaterAPI": {
                 "enabled": false
@@ -70,7 +70,7 @@
                 "enabled": false
             },
             "BetterGifAltText": {
-                "enabled": false
+                "enabled": true
             },
             "BetterGifPicker": {
                 "enabled": false
@@ -79,34 +79,41 @@
                 "enabled": false
             },
             "BetterRoleDot": {
-                "enabled": false
+                "enabled": false,
+                "bothStyles": false,
+                "copyRoleColorInProfilePopout": false
             },
             "BetterSessions": {
                 "enabled": false
             },
             "BetterSettings": {
-                "enabled": false
+                "enabled": false,
+                "disableFade": true,
+                "eagerLoad": true,
+                "organizeMenu": true
             },
             "BetterUploadButton": {
                 "enabled": false
             },
             "BiggerStreamPreview": {
-                "enabled": false
+                "enabled": true
             },
             "BlurNSFW": {
-                "enabled": false
+                "enabled": false,
+                "blurAmount": 10
             },
             "CallTimer": {
                 "enabled": false
             },
             "CharacterCounter": {
-                "enabled": false
+                "enabled": true
             },
             "ClearURLs": {
-                "enabled": false
+                "enabled": true
             },
             "ClientTheme": {
-                "enabled": false
+                "enabled": false,
+                "color": "313338"
             },
             "ColorSighted": {
                 "enabled": false
@@ -133,7 +140,8 @@
                 "enabled": true
             },
             "CustomCommands": {
-                "enabled": false
+                "enabled": false,
+                "tagsList": {}
             },
             "CustomIdle": {
                 "enabled": false
@@ -145,10 +153,10 @@
                 "enabled": false
             },
             "Decor": {
-                "enabled": false
+                "enabled": true
             },
             "DisableCallIdle": {
-                "enabled": false
+                "enabled": true
             },
             "DontRoundMyTimestamps": {
                 "enabled": false
@@ -197,7 +205,7 @@
                 "enabled": false
             },
             "FriendsSince": {
-                "enabled": false
+                "enabled": true
             },
             "FullSearchContext": {
                 "enabled": false
@@ -212,7 +220,8 @@
                 "enabled": false
             },
             "GreetStickerPicker": {
-                "enabled": false
+                "enabled": true,
+                "greetMode": "Greet"
             },
             "HideMedia": {
                 "enabled": false
@@ -224,19 +233,32 @@
                 "enabled": false
             },
             "ImageFilename": {
-                "enabled": false
+                "enabled": true,
+                "showFullUrl": false
             },
             "ImageLink": {
                 "enabled": false
             },
             "ImageZoom": {
-                "enabled": false
+                "enabled": false,
+                "saveZoomValues": true,
+                "invertScroll": true,
+                "nearestNeighbour": false,
+                "square": false,
+                "zoom": 2,
+                "size": 100,
+                "zoomSpeed": 0.5
             },
             "ImplicitRelationships": {
-                "enabled": false
+                "enabled": false,
+                "sortByAffinity": true
             },
             "IrcColors": {
-                "enabled": false
+                "enabled": false,
+                "lightness": 70,
+                "memberListColors": true,
+                "applyColorOnlyToUsersWithoutColor": false,
+                "applyColorOnlyInDms": false
             },
             "KeepCurrentChannel": {
                 "enabled": false
@@ -245,10 +267,18 @@
                 "enabled": false
             },
             "LoadingQuotes": {
-                "enabled": false
+                "enabled": false,
+                "replaceEvents": true,
+                "enablePluginPresetQuotes": true,
+                "enableDiscordPresetQuotes": false,
+                "additionalQuotes": "",
+                "additionalQuotesDelimiter": "|"
             },
             "MemberCount": {
-                "enabled": false
+                "enabled": false,
+                "toolTip": true,
+                "memberList": true,
+                "voiceActivity": true
             },
             "MentionAvatars": {
                 "enabled": false
@@ -308,7 +338,7 @@
                 "enabled": false
             },
             "NoTypingAnimation": {
-                "enabled": false
+                "enabled": true
             },
             "NoUnblockToJump": {
                 "enabled": false
@@ -332,7 +362,9 @@
                 "enabled": false
             },
             "PermissionFreeWill": {
-                "enabled": false
+                "enabled": true,
+                "lockout": true,
+                "onboarding": true
             },
             "PermissionsViewer": {
                 "enabled": false
@@ -410,10 +442,10 @@
                 "enabled": false
             },
             "ShowHiddenChannels": {
-                "enabled": false
+                "enabled": true
             },
             "ShowHiddenThings": {
-                "enabled": false
+                "enabled": true
             },
             "ShowMeYourName": {
                 "enabled": false
@@ -452,14 +484,32 @@
                 "enabled": false
             },
             "TextReplace": {
-                "enabled": false
+                "enabled": false,
+                "stringRules": [
+                    {
+                        "find": "",
+                        "replace": "",
+                        "onlyIfIncludes": "",
+                        "id": "9da6fd78-dff6-492b-b22f-43c464c31b1e"
+                    }
+                ],
+                "regexRules": [
+                    {
+                        "find": "",
+                        "replace": "",
+                        "onlyIfIncludes": "",
+                        "id": "f4c4c9f1-acbf-4de2-a44b-2b0316fdb744"
+                    }
+                ]
             },
             "ThemeAttributes": {
                 "enabled": false
             },
             "Translate": {
-                "enabled": false,
-                "service": "google"
+                "enabled": true,
+                "service": "google",
+                "autoTranslate": false,
+                "showAutoTranslateTooltip": true
             },
             "TypingIndicator": {
                 "enabled": false
@@ -483,7 +533,9 @@
                 "enabled": false
             },
             "USRBG": {
-                "enabled": false
+                "enabled": true,
+                "nitroFirst": true,
+                "voiceBackground": true
             },
             "ValidReply": {
                 "enabled": false
@@ -498,7 +550,7 @@
                 "enabled": false
             },
             "VencordToolbox": {
-                "enabled": false
+                "enabled": true
             },
             "ViewIcons": {
                 "enabled": false
@@ -526,7 +578,7 @@
                 "enabled": true
             },
             "WhoReacted": {
-                "enabled": false
+                "enabled": true
             },
             "XSOverlay": {
                 "enabled": false
@@ -567,7 +619,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1781937538861
+            "settingsSyncVersion": 1782215627923
         }
     },
     "quickCss": ""
